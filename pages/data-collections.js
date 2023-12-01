@@ -32,10 +32,13 @@ const person1 = new Person(ID2, Name2, Occupation2, Age2);
 const person2 = new Person(ID3, Name3, Occupation3, Age3);
 const person3 = new Person(ID4, Name4, Occupation4, Age4);
 const person4 = new Person(ID5, Name5, Occupation5, Age5);
-console.log(person1);
-console.log(person2);
-console.log(person3);
-console.log(person4);
+// console.log(person1);
+// console.log(person2);
+// console.log(person3);
+// console.log(person4);
+
+let refactoredArray = [person1, person2, person3, person4]
+console.log("My Refactored Array", refactoredArray)
 
 //******************************************************* */
 //Part 2: Expanding Functionality
@@ -110,8 +113,6 @@ console.log("Average age of the group:  ", avgAge);
 //Part 5 - Transform the array back into csv format
 
 let csvStr;
-let headerArray = row1.toLowerCase().split(",");
-let newArray = [];
 sortedArray.forEach((item) => {
   csvStr = "";
   for (c in item) {
@@ -119,4 +120,4 @@ sortedArray.forEach((item) => {
   }
 });
 
-console.log("The CSV String:\n",csvString);
+console.log("The CSV String:\n", csvString);
