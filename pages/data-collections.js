@@ -37,8 +37,8 @@ const person4 = new Person(ID5, Name5, Occupation5, Age5);
 // console.log(person3);
 // console.log(person4);
 
-let refactoredArray = [person1, person2, person3, person4]
-console.log("My Refactored Array", refactoredArray)
+let refactoredArray = [person1, person2, person3, person4];
+console.log("My Refactored Array", refactoredArray);
 
 //******************************************************* */
 //Part 2: Expanding Functionality
